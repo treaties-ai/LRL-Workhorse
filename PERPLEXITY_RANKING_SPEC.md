@@ -1,476 +1,303 @@
-# Perplexity Source Ranking & Analysis Specification
-## Detailed Implementation Guide for Research Quality Assessment
+# Perplexity Thread Analysis & Source Ranking Specification
+## Processing Licia's 20 Existing Research Threads
 
-**Purpose:** Transform Perplexity's 25-30 mixed-quality sources into a tiered, weighted analysis that Licia and Bessel can trust.
-
-**Critical Context:** "Often half to two-thirds are just random people talking on websites" - We need to separate gold from noise.
+### 📌 Critical Understanding
+**Licia has ALREADY created 20 Perplexity research threads in the browser**
+- These are existing threads, not to be generated
+- Each thread contains 25-30 sources (500-600 total sources)
+- Licia's concern: "Often half to two-thirds are just some random person on a website"
+- Task: Analyze, rank, and synthesize her existing research
 
 ---
 
-## 🎯 Core Algorithm
+## 🎯 Source Ranking System
 
-### Source Quality Score Formula
+### Tier 1: Academic Gold Standard (Score 24-30/30)
+**Characteristics:**
+- Peer-reviewed journals
+- University research publications
+- Systematic reviews and meta-analyses
+- Clinical trials and studies
+- High citation count
+- Recent publication (last 5 years preferred)
 
-```python
-def calculate_source_score(source):
-    """
-    Calculate a 0-30 quality score for each source
-    
-    Components:
-    - Academic Credibility (0-10)
-    - Research Depth (0-10) 
-    - Methodological Rigor (0-10)
-    """
-    
-    academic_score = 0
-    depth_score = 0
-    rigor_score = 0
-    
-    # Academic Credibility Scoring
-    if is_peer_reviewed(source):
-        academic_score += 3
-    if has_university_affiliation(source):
-        academic_score += 2
-    if has_professional_credentials(source.author):
-        academic_score += 2
-    if has_high_citations(source):
-        academic_score += 2
-    if from_reputable_publication(source):
-        academic_score += 1
-    
-    # Research Depth Scoring
-    if is_primary_research(source):
-        depth_score += 3
-    elif is_systematic_review(source):
-        depth_score += 3
-    elif is_clinical_study(source):
-        depth_score += 2
-    elif is_expert_commentary(source):
-        depth_score += 1
-    # Blog/opinion gets 0
-    
-    # Additional depth factors
-    if has_large_sample_size(source):
-        depth_score += 2
-    if is_longitudinal_study(source):
-        depth_score += 2
-    if has_multiple_data_sources(source):
-        depth_score += 1
-    
-    # Methodological Rigor Scoring
-    if has_clear_methodology(source):
-        rigor_score += 3
-    if has_adequate_sample_size(source):
-        rigor_score += 2
-    if has_control_groups(source):
-        rigor_score += 2
-    if acknowledges_limitations(source):
-        rigor_score += 2
-    if is_replicable(source):
-        rigor_score += 1
-    
-    total_score = academic_score + depth_score + rigor_score
-    
-    return {
-        'total': total_score,
-        'academic': academic_score,
-        'depth': depth_score,
-        'rigor': rigor_score,
-        'tier': assign_tier(total_score)
-    }
+**Marking:** ⭐ **GOLD STANDARD**
+
+**Weight in Synthesis:** 3x
+
+**Examples:**
+- Nature, Science, JAMA, Lancet
+- Journal of Traumatic Stress
+- Clinical Psychology Review
+- Neuroscience & Biobehavioral Reviews
+
+### Tier 2: Professional & Expert (Score 15-23/30)
+**Characteristics:**
+- Professional publications
+- Expert practitioners with credentials
+- Industry standards and guidelines
+- Books by recognized authorities
+- Reputable organizations
+- Clinical experience reports
+
+**Marking:** ✓ **RELIABLE**
+
+**Weight in Synthesis:** 2x
+
+**Examples:**
+- Harvard Health Publishing
+- APA resources
+- Books by established experts
+- Professional association guidelines
+- Government health resources
+
+### Tier 3: General Web Content (Score 0-14/30)
+**Characteristics:**
+- Blog posts
+- Personal opinions
+- Unverified claims
+- Anecdotal evidence
+- Forum discussions
+- Commercial websites
+
+**Marking:** ⚠️ **USE WITH CAUTION**
+
+**Weight in Synthesis:** 1x
+
+**Examples:**
+- Personal blogs
+- Reddit threads
+- Commercial wellness sites
+- Unattributed web articles
+
+---
+
+## 📊 Scoring Matrix
+
+### Academic Credibility (0-10 points)
+- Peer-reviewed journal: +3
+- University affiliation: +2
+- Author credentials (PhD, MD, etc.): +2
+- Citation metrics: +2
+- Publication reputation: +1
+
+### Research Depth (0-10 points)
+- Primary research: +3
+- Systematic review/meta-analysis: +3
+- Clinical study: +2
+- Expert commentary with citations: +1
+- Opinion without citations: 0
+
+### Methodological Rigor (0-10 points)
+- Clear methodology: +3
+- Adequate sample size: +2
+- Control groups/conditions: +2
+- Limitations acknowledged: +2
+- Replicable: +1
+
+**Total Score: 0-30 points**
+
+---
+
+## 🔄 Processing Workflow
+
+### Phase 1: Thread Intake
+```yaml
+for each of 20 threads:
+  1. Extract thread title/topic
+  2. Capture Licia's original questions
+  3. Extract all 25-30 source URLs
+  4. Preserve source context (why cited)
+  5. Note thread creation date
 ```
 
----
-
-## 📊 Tier Classification System
-
-### Tier 1: Academic Gold Standard (Score 24-30)
+### Phase 2: Source Analysis
 ```yaml
-characteristics:
-  - Peer-reviewed journal articles
-  - Systematic reviews and meta-analyses
-  - Large-scale clinical trials
-  - Seminal works by field leaders
+for each source:
+  1. Identify source type
+  2. Extract author credentials
+  3. Check publication venue
+  4. Assess methodology (if research)
+  5. Calculate quality score (0-30)
+  6. Assign tier (1, 2, or 3)
+  7. Flag potential issues
+```
+
+### Phase 3: Quality Synthesis
+```yaml
+for each thread:
+  1. Create tier breakdown:
+     - X% Tier 1 (Academic)
+     - Y% Tier 2 (Professional)
+     - Z% Tier 3 (General)
   
-visual_marker: "⭐ GOLD STANDARD"
-weight_multiplier: 3x
-trust_level: "Highest - cite with confidence"
-
-examples:
-  - Nature, Science, JAMA publications
-  - Cochrane Reviews
-  - NIH-funded studies
-  - Books by recognized experts (van der Kolk, Porges, etc.)
-```
-
-### Tier 2: Professional Reliable (Score 15-23)
-```yaml
-characteristics:
-  - Professional publications
-  - Expert practitioner articles
-  - Industry white papers
-  - Clinical case studies
-  - Reputable news outlets (health sections)
+  2. Weight insights by source quality
   
-visual_marker: "✓ RELIABLE"
-weight_multiplier: 2x
-trust_level: "Good - use with context"
-
-examples:
-  - Psychology Today (expert contributors)
-  - Harvard Health Publishing
-  - APA publications
-  - Professional association guidelines
+  3. Flag unsupported claims:
+     - 🚨 "Needs better source" (only Tier 3 support)
+     - ✅ "Well-supported" (multiple Tier 1 sources)
+     - 📊 "Mixed evidence" (conflicting tiers)
 ```
 
-### Tier 3: General Web Content (Score 0-14)
+### Phase 4: Question Extraction
 ```yaml
-characteristics:
-  - Personal blogs
-  - Opinion pieces
-  - Anecdotal reports
-  - Social media posts
-  - Unverified claims
-  
-visual_marker: "⚠️ USE WITH CAUTION"
-weight_multiplier: 1x
-trust_level: "Low - verify independently"
-
-examples:
-  - Medium articles (non-expert)
-  - Reddit discussions
-  - Personal wellness blogs
-  - YouTube comments
+for each thread:
+  1. Extract Licia's driving questions
+  2. Identify sub-questions explored
+  3. Note which questions got answered
+  4. Flag questions needing more research
+  5. Map questions to book chapters
 ```
 
----
-
-## 🔍 Source Metadata Extraction
-
-### Required Fields to Capture
-
+### Phase 5: Clustering & Flow
 ```yaml
-metadata_schema:
-  url: string
-  title: string
-  
-  author:
-    name: string
-    credentials: array[string]
-    affiliation: string
-    h_index: number (optional)
-    
-  publication:
-    venue: string
-    type: enum[journal, book, website, blog, news]
-    impact_factor: number (optional)
-    publisher: string
-    date: date
-    
-  research_type:
-    category: enum[empirical, review, opinion, news]
-    methodology: string (optional)
-    sample_size: number (optional)
-    
-  citations:
-    count: number
-    recent_citations: number (last 2 years)
-    
-  relevance:
-    to_trauma_healing: score(0-10)
-    to_somatic_therapy: score(0-10)
-    to_book_themes: score(0-10)
+across all threads:
+  1. Identify overlapping questions
+  2. Cluster by theme
+  3. Create narrative sequences
+  4. Map to potential chapters
+  5. Show connection patterns
 ```
 
 ---
 
-## 🎨 Visual Output Format
+## 📝 Output Format
 
-### Individual Source Card
-```
-┌─────────────────────────────────────────────┐
-│ ⭐ GOLD STANDARD                            │
-│                                             │
-│ Title: The Polyvagal Theory: Neurophysio.. │
-│ Author: Stephen W. Porges, PhD              │
-│ Venue: Biological Psychology                │
-│ Year: 2007 | Citations: 5,420              │
-│                                             │
-│ Scores: Academic: 9 | Depth: 10 | Rigor: 9 │
-│ Total: 28/30                                │
-│                                             │
-│ Key Finding: "Vagal tone directly           │
-│ correlates with emotional regulation..."    │
-└─────────────────────────────────────────────┘
-```
+### Per-Thread Analysis Report
+```markdown
+# Thread: [Title]
+## Topic: [Main subject]
+## Date: [When created]
 
-### Thread Summary Report
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PERPLEXITY THREAD ANALYSIS: Somatic Interventions
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### Source Quality Breakdown
+- Tier 1 (Academic): X sources (X%)
+- Tier 2 (Professional): Y sources (Y%)  
+- Tier 3 (General): Z sources (Z%)
 
-SOURCE QUALITY BREAKDOWN:
-⭐ Tier 1 (Gold):     8 sources (32%)
-✓  Tier 2 (Reliable): 7 sources (28%)
-⚠️  Tier 3 (Caution): 10 sources (40%)
+### Key Findings by Source Tier
+#### From Gold Standard Sources:
+- [Finding with source reference]
 
-TOP INSIGHTS (from Gold sources only):
-• Somatic experiencing shows 85% efficacy in single-trauma PTSD
-• Vagal tone improvement correlates with symptom reduction
-• Cultural variations exist in somatic expression of trauma
+#### From Professional Sources:
+- [Finding with source reference]
 
-CLAIMS NEEDING BETTER SUPPORT:
-🚨 "Energy healing resolves trauma" - only Tier 3 support
-🚨 "All trauma is stored in the fascia" - mixed evidence
+#### From General Sources (Use Cautiously):
+- [Finding with source reference]
 
-RECOMMENDED ADDITIONAL RESEARCH:
-→ Longitudinal studies on somatic intervention outcomes
-→ Cross-cultural somatic therapy effectiveness
-→ Neurobiological mechanisms of body-based healing
+### Questions Explored
+1. [Primary question]
+   - Answer quality: [Well-supported/Mixed/Weak]
+2. [Secondary questions...]
+
+### Gaps Identified
+- [Topics needing better sources]
+- [Unanswered questions]
+
+### Connection to Other Threads
+- Overlaps with: [Thread names]
+- Shared themes: [Themes]
 ```
 
----
+### Master Synthesis Document
+```markdown
+# Perplexity Research Synthesis
+## Analysis of 20 Threads (500-600 sources)
 
-## 💻 Implementation Pipeline
+### Overall Source Quality
+- Average thread quality score: X/30
+- Total Tier 1 sources: X (X%)
+- Total Tier 2 sources: Y (Y%)
+- Total Tier 3 sources: Z (Z%)
 
-### Step-by-Step Processing
+### Strongest Evidence Areas
+[Topics with multiple Tier 1 sources]
 
-```yaml
-pipeline:
-  1_thread_ingestion:
-    input: Raw Perplexity thread HTML/JSON
-    process:
-      - Extract main synthesis text
-      - Extract all source URLs
-      - Preserve citation contexts
-    output: Structured thread object
-    
-  2_source_fetching:
-    input: List of source URLs
-    process:
-      - Fetch metadata via APIs (CrossRef, PubMed, Google Scholar)
-      - Extract author information
-      - Get citation counts
-      - Identify publication venue
-    output: Enriched source metadata
-    
-  3_scoring_engine:
-    input: Enriched source metadata
-    process:
-      - Apply scoring algorithm
-      - Calculate component scores
-      - Assign tier classification
-    output: Scored source list
-    
-  4_synthesis_weighting:
-    input: Original synthesis + scored sources
-    process:
-      - Parse claims in synthesis
-      - Map claims to supporting sources
-      - Apply tier-based weights
-      - Flag unsupported claims
-    output: Weighted synthesis
-    
-  5_report_generation:
-    input: All processed data
-    process:
-      - Create visual source cards
-      - Generate quality breakdown
-      - Extract key insights by tier
-      - Identify research gaps
-    output: Complete analysis report
+### Weakest Evidence Areas
+[Topics relying on Tier 3 sources]
+
+### Question Clusters for Chapters
+[Organized by theme with flow]
+
+### Research Gaps
+[What needs additional investigation]
+
+### Recommendations
+[Priority areas for additional research]
 ```
 
 ---
 
-## 🔧 Integration with Existing Systems
+## 🚨 Special Considerations
 
-### Agent Coordination
+### For Licia's Method
+- She guides explorations first, then finds science
+- Looking for science "Bessel wouldn't think to look for"
+- Multi-directional: practice ↔ science
+- Open-ended pattern discovery
 
-```yaml
-agent_responsibilities:
-  
-  Theoretical_Framework_Agent:
-    - Assess academic credibility
-    - Verify theoretical alignment
-    - Check citation networks
-    
-  Clinical_Application_Agent:
-    - Evaluate practical relevance
-    - Assess clinical validity
-    - Check for contraindications
-    
-  Publication_Generation_Agent:
-    - Determine book relevance
-    - Extract quotable passages
-    - Format for editorial use
-    
-  Cultural_Context_Agent:
-    - Check cultural sensitivity
-    - Flag Western-centric bias
-    - Ensure diverse perspectives
-```
+### Quality Flags
+- 🏆 **Breakthrough Finding**: Tier 1 source with novel insight
+- 🔬 **Needs Validation**: Interesting Tier 3 claim needing research
+- ⚡ **Convergent Evidence**: Multiple tiers pointing same direction
+- ❓ **Contradictory Evidence**: Sources disagree
+- 🌟 **Licia's Innovation**: Her insight beyond all sources
 
-### ChromaDB Storage Schema
-
-```python
-collection_schema = {
-    'name': 'perplexity_sources',
-    'metadata': {
-        'thread_id': 'string',
-        'source_url': 'string',
-        'tier': 'int',
-        'total_score': 'float',
-        'academic_score': 'float',
-        'depth_score': 'float',
-        'rigor_score': 'float',
-        'author': 'string',
-        'publication': 'string',
-        'year': 'int',
-        'citations': 'int'
-    },
-    'embedding_fields': ['title', 'abstract', 'key_findings']
-}
-```
+### Bridge to Bessel
+- Identify Tier 1 sources that support Licia's approach
+- Find research that bridges their perspectives
+- Note where science validates somatic wisdom
 
 ---
 
-## 📈 Quality Metrics
+## 💡 For Editorial Sprint
 
-### Success Indicators
+### Deliverables
+1. **Source Quality Dashboard**: Visual breakdown of research quality
+2. **Question Flow Map**: How questions connect and cluster
+3. **Evidence Strength Indicators**: What's well-supported vs. speculative
+4. **Gap Analysis**: Where more research is needed
+5. **Chapter Alignment**: How research maps to book structure
 
-```yaml
-quality_metrics:
-  
-  coverage:
-    target: 100% of sources classified
-    measurement: count(classified) / count(total)
-    
-  accuracy:
-    target: 95% tier assignments validated
-    measurement: manual spot checks
-    
-  utility:
-    target: Editorial team uses rankings
-    measurement: Usage tracking
-    
-  trust:
-    target: Licia confident in rankings
-    measurement: Feedback surveys
-    
-  improvement:
-    target: Higher % Tier 1 over time
-    measurement: Tier distribution trends
-```
-
-### Validation Protocol
-
-```yaml
-validation_steps:
-  
-  1_sample_validation:
-    - Manually score 10 sources
-    - Compare with algorithm scores
-    - Adjust weights if needed
-    
-  2_expert_review:
-    - Have domain expert review tier assignments
-    - Get feedback on edge cases
-    - Refine classification rules
-    
-  3_user_testing:
-    - Present to Licia and team
-    - Gather usability feedback
-    - Iterate on visual design
-    
-  4_continuous_improvement:
-    - Track disagreements
-    - Update scoring factors
-    - Expand metadata sources
-```
+### Presentation Format
+- Modular cards for each thread
+- Color-coded by source quality
+- Sticky note summaries
+- Whiteboard-friendly visuals
+- Connection lines between themes
 
 ---
 
-## 🚀 Quick Start Guide
+## 🎬 Implementation Steps
 
-### For Immediate Use
+### When Threads Arrive:
+1. Create intake template
+2. Process first thread as test
+3. Refine scoring based on actual sources
+4. Batch process remaining threads
+5. Generate synthesis reports
+6. Create editorial materials
 
-```python
-# Example usage for processing a single Perplexity thread
-
-from perplexity_ranker import PerplexitySourceRanker
-
-# Initialize ranker
-ranker = PerplexitySourceRanker()
-
-# Load thread
-thread = ranker.load_thread("perplexity_thread.json")
-
-# Process all sources
-ranked_sources = ranker.rank_sources(thread.sources)
-
-# Generate report
-report = ranker.generate_report(
-    thread=thread,
-    sources=ranked_sources,
-    include_visuals=True,
-    highlight_gaps=True
-)
-
-# Save for editorial team
-report.save("editorial_materials/thread_analysis.pdf")
-
-# Extract gold-standard insights
-gold_insights = report.get_tier_1_insights()
-```
+### Time Estimate:
+- Per thread analysis: 20-30 minutes
+- Total processing: 8-10 hours
+- Synthesis generation: 2 hours
+- Editorial materials: 2 hours
+- **Total: 12-14 hours**
 
 ---
 
-## 🔄 Continuous Improvement
+## 📊 Success Metrics
 
-### Feedback Loop
-
-```yaml
-improvement_cycle:
-  
-  weekly:
-    - Review tier distribution
-    - Check for classification errors
-    - Update publication venue list
-    
-  monthly:
-    - Analyze user feedback
-    - Refine scoring weights
-    - Add new metadata sources
-    
-  quarterly:
-    - Major algorithm updates
-    - Expand factor considerations
-    - Performance optimization
-```
-
-### Evolution Tracking
-
-```yaml
-metrics_to_track:
-  - Average thread quality score over time
-  - Percentage of Tier 1 sources found
-  - User satisfaction ratings
-  - Time saved in research validation
-  - Number of high-quality sources discovered
-```
+1. **All 500-600 sources categorized and scored**
+2. **Clear quality indicators throughout**
+3. **Questions clustered with narrative flow**
+4. **Gaps and opportunities identified**
+5. **Editorial team has actionable insights**
+6. **Bessel can see the scientific rigor**
+7. **Licia's wisdom properly contextualized**
 
 ---
 
-## 📝 Notes for Implementation
+*"It spit out all kinds of studies that I don't think it would occur to Bessel to look at." - Licia Sky*
 
-1. **Start Simple**: Begin with basic URL pattern matching for quick wins
-2. **API Priority**: CrossRef and PubMed APIs are most valuable
-3. **Fallback Logic**: When metadata unavailable, use conservative scoring
-4. **User Override**: Allow manual tier adjustment with reasoning
-5. **Batch Processing**: Process all 20 threads together for efficiency
-
----
-
-*This specification ensures that Licia can trust the research quality assessment, Bessel sees rigorous source evaluation, and the editorial team has clear, actionable intelligence about their research materials.*
+This ranking system ensures we separate the wheat from the chaff while honoring Licia's innovative research approach.

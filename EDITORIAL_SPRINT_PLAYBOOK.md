@@ -1,615 +1,313 @@
 # Editorial Sprint Playbook
-## 3-Day Intensive with Bessel van der Kolk & Editorial Team
+## Materials & Strategy for 3-Day Intensive with Bessel & Editors
 
-**Mission:** Generate compelling book materials that naturally reveal Licia's scientific rigor while preserving the sacred nuance of trauma healing work.
+### 🎯 Sprint Goals (From Licia)
+1. **Solid outline** that Bessel, Licia, and editors all "feel good about"
+2. **Content in order** with clear narrative flow
+3. **Identify holes** and gaps in coverage
+4. **Find authentic voice** - "how to put it more into our own words"
+5. **Case study placement** - where examples fit
 
-**Philosophy:** "Revelation, not persuasion" - Let the evidence speak for itself.
-
----
-
-## 🎯 Sprint Overview
-
-### Team & Context
-- **Licia Sky**: 40 years of trauma healing wisdom to preserve
-- **Bessel van der Kolk**: Co-author, respects Licia but may not see the full scientific rigor
-- **3 Editors**: Supporting the book creation process
-- **The Book**: Sequel to "The Body Keeps the Score"
-- **Key Theme**: "The senses write the score that the body keeps"
-
-### Success Criteria
-- Bessel naturally sees Licia's scientific foundation
-- Editorial team has compelling materials to work with
-- Examples ready with Licia's voice integrated
-- Research naturally woven into narratives
-- Clear chapter possibilities emerge
+### 🎭 The Editorial Team Dynamic
+- **Editors are "hot dogs"** - improvisational, energetic
+- **They'll "jump in"** with sticky pads and giant whiteboard
+- **Bessel has "old school" writing approach** - may need gentle bridging
+- **Licia thinks in flow**, Bessel thinks in details
 
 ---
 
-## 📅 Day 1: Foundation & Quick Wins
+## 📦 Immediate Deliverables ("Nutrients and Tee-ups")
 
-### Morning (9:00 AM - 12:00 PM)
+### 1. 🌊 Question Flow Map
+**Format:** Modular cards that can be rearranged
 
-#### Hour 1: System Introduction & First Materials
-**9:00-10:00 AM**
-
-```yaml
-objectives:
-  - Show immediate value
-  - Build trust in the system
-  - Generate first working materials
-
-materials_to_generate:
-  1_quick_summary:
-    input: 5-minute transcript segment
-    output: 2-page executive summary
-    focus: Emotional and somatic patterns
-    time: 30 minutes
-    
-  2_pattern_preview:
-    input: 3 available transcripts
-    output: Visual pattern map
-    focus: Recurring themes
-    time: 30 minutes
-
-presentation_approach:
-  - Start with a compelling story from the transcript
-  - Let patterns emerge naturally
-  - Use "we noticed" language
-  - No forcing of interpretations
+#### Card Structure:
+```
+┌─────────────────────────┐
+│ THEME: [Theme Name]     │
+│                         │
+│ Questions:              │
+│ • [Question 1]          │
+│ • [Question 2]          │
+│                         │
+│ Overlaps with:          │
+│ [Other themes]          │
+│                         │
+│ Chapter Candidate: #    │
+└─────────────────────────┘
 ```
 
-#### Hour 2: Mural Board Creation
-**10:00-11:00 AM**
+#### Flow Visualization:
+- Start with broad questions → narrow to specific
+- Show connections between themes with lines
+- Mark which questions appear in multiple threads
+- Create natural chapter sequences
 
-```yaml
-mural_boards_to_create:
-  
-  board_1_emotional_journey:
-    content:
-      - Emotional progression through sessions
-      - Breakthrough moments marked
-      - Group dynamics visible
-    color_coding:
-      - Blue: Emotional states
-      - Red: Breakthrough moments
-      - Purple: Group coherence
-      
-  board_2_somatic_patterns:
-    content:
-      - Body sensation references
-      - Movement patterns
-      - Touch vocabulary emerging
-    color_coding:
-      - Green: Body sensations
-      - Orange: Movement
-      - Yellow: Energy/presence
-      
-  board_3_questions_themes:
-    content:
-      - Questions from participants
-      - Questions from facilitators
-      - Unanswered questions
-    organization:
-      - Clustered by theme
-      - Arranged in learning flow
+### 2. 🎵 "Senses Write the Score" Master Board
+
+#### Central Concept Map:
+```
+                    SENSES WRITE THE SCORE
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+   Physical Senses    Metaphorical Senses    Agency
+        │                   │                   │
+   • Touch            • Sense of Self      • Trust
+   • Sound            • Sense of Time      • Choice
+   • Sight            • Sense of Safety    • Action
+   • Etc.             • Sense of Justice   • Sovereignty
 ```
 
-#### Hour 3: Collaborative Discovery
-**11:00 AM-12:00 PM**
+#### Discussion Prompts:
+- Is this THE overarching framework?
+- How does each chapter serve this metaphor?
+- Where's the research support?
+- What case studies illustrate this?
 
-```yaml
-collaborative_session:
-  format: Open discussion with materials
-  
-  key_questions_to_pose:
-    - "What patterns are you noticing?"
-    - "Does this remind you of...?"
-    - "What questions does this raise?"
-    
-  subtle_revelation_moments:
-    - When pattern emerges, mention related research casually
-    - Bridge from Bessel's known work
-    - Present as collaborative discovery
-    
-  example_script:
-    "Bessel, this pattern we're seeing here - participants 
-    consistently using the word 'spacious' after this 
-    intervention - reminds me of what you wrote about 
-    expanding the window of tolerance. But there's 
-    something additional happening with the breath work..."
+### 3. 👋 Touch Vocabulary Taxonomy
+
+#### Hierarchy of Contact (Visual):
+```
+PROXIMITY ──► EYE CONTACT ──► VOICE ──► ENERGY ──► PHYSICAL TOUCH
+    │             │            │         │            │
+"Being near"  "Visual touch" "Sonic"  "Field"   "Direct contact"
+                                                      │
+                                         ┌────────────┼────────────┐
+                                    Self-touch  Supported  Partnered
 ```
 
-### Afternoon (1:00 PM - 5:00 PM)
+#### Clinical Applications:
+- **For therapists without touch permission**
+- **For touch-phobic clients**
+- **Cultural variations**
+- **Safety protocols**
 
-#### Hour 4: Feedback Integration
-**1:00-2:00 PM**
+### 4. 🍄 Psychedelic Integration Priority Board
 
-```yaml
-rapid_iteration:
-  - Gather team feedback on morning materials
-  - Adjust pattern recognition parameters
-  - Refine example selection
-  - Update Mural boards in real-time
+#### Why This Matters:
+- Bessel has psychedelics chapter
+- Licia is THE integration expert
+- "Many people have had terrible integrations"
+
+#### Key Points for Discussion:
+- Integration as somatic process
+- Where embodiment meets expansion
+- Case studies (with privacy protection)
+- Australia Mind Medicine insights
+
+### 5. 🔬 Science-Practice Bridge Cards
+
+#### Format: Two-sided cards
+**Front:** Licia's somatic exploration
+**Back:** Supporting science
+
+Example:
+```
+FRONT:                          BACK:
+"Sensing the depth of          Studies show interoceptive
+your body from surface         awareness activates insula,
+to spine"                      improves emotional regulation
+                              (Craig, 2009; Farb et al., 2015)
 ```
 
-#### Hour 5: Chapter Alignment Preview
-**2:00-3:00 PM**
+### 6. 📊 Perplexity Source Quality Dashboard
 
-```yaml
-chapter_exploration:
-  
-  alignment_exercise:
-    - Present discovered patterns
-    - Map to potential chapters
-    - Identify strongest examples
-    - Note gaps in coverage
-    
-  visual_output:
-    type: Heat map
-    shows:
-      - Which patterns fit which chapters
-      - Strength of examples
-      - Coverage gaps
-      - Natural chapter flow
+#### Visual Breakdown:
 ```
+Thread Quality Overview
+━━━━━━━━━━━━━━━━━━━━━━
+⭐ Gold (Academic):    25%
+✓ Reliable (Pro):     35%
+⚠️ Caution (General):  40%
 
-#### Hour 6-7: Example Enrichment Setup
-**3:00-5:00 PM**
+Strongest Evidence:
+• [Topic] - 8 gold sources
+• [Topic] - 6 gold sources
 
-```yaml
-licia_voice_capture_prep:
-  
-  example_selection:
-    - Choose 5 high-impact examples
-    - Prepare context packets
-    - Set up recording equipment
-    
-  licia_session_1:
-    duration: 30 minutes
-    examples_covered: 3
-    capture_method:
-      - Audio recording
-      - Key quotes documented
-      - Context questions asked
-    
-  immediate_integration:
-    - Transcribe Licia's additions
-    - Weave into examples
-    - Show enriched versions to team
-```
-
-### Day 1 Deliverables
-- 3 Mural boards with patterns
-- 5 enriched examples with Licia's voice
-- Chapter alignment heat map
-- Pattern emergence documentation
-
----
-
-## 📅 Day 2: Depth & Integration
-
-### Morning (9:00 AM - 12:00 PM)
-
-#### Hour 1-2: Question Clustering Magic
-**9:00-11:00 AM**
-
-```yaml
-question_transformation:
-  
-  input:
-    - All questions from Day 1
-    - Additional transcript questions
-    - Editorial team questions
-    
-  process:
-    1_clustering:
-      - Semantic grouping by theme
-      - Hierarchy creation
-      - Flow mapping
-      
-    2_presentation:
-      style: "Journey of inquiry"
-      format: |
-        "We discovered that participants consistently ask
-        about body sensations before emotional awareness.
-        This progression appears in 15 of 20 sessions,
-        suggesting a natural learning sequence..."
-        
-  output:
-    - Question taxonomy
-    - Learning pathways
-    - Chapter question maps
-```
-
-#### Hour 3: Research Integration (Subtle!)
-**11:00 AM-12:00 PM**
-
-```yaml
-research_weaving:
-  
-  never_say:
-    - "Research proves..."
-    - "Studies demonstrate..."
-    - "Evidence shows..."
-    
-  always_say:
-    - "Interestingly, [researcher] noticed something similar..."
-    - "This echoes what we've seen in..."
-    - "A pattern emerges that aligns with..."
-    
-  integration_example:
-    original: "Participants reported feeling safer"
-    
-    enhanced: |
-      "Participants consistently used words like 'held' 
-      and 'contained' when describing their sense of safety.
-      Interestingly, Porges' work on social engagement 
-      describes something similar - this quality of being
-      'neurologically held' by attuned presence. 
-      Makes you wonder if what Licia's capturing here
-      is that same neuroceptive shift..."
-```
-
-### Afternoon (1:00 PM - 5:00 PM)
-
-#### Hour 4-5: Narrative Weaving
-**1:00-3:00 PM**
-
-```yaml
-story_creation:
-  
-  structure:
-    1_compelling_opening:
-      - Sensory rich scene
-      - Human connection
-      - Moment of tension
-      
-    2_journey_development:
-      - Pattern emergence
-      - Multiple perspectives
-      - Questions raised
-      
-    3_gentle_research:
-      - Natural citations
-      - Convergent evidence
-      - "We noticed" framing
-      
-    4_open_ending:
-      - Questions not answers
-      - Invitation to explore
-      - Multiple possibilities
-      
-  example_narrative: |
-    Sarah sat frozen, her shoulders pulled up toward her 
-    ears, breath barely moving. Then Licia asked her to 
-    notice the weight of her feet on the floor. 
-    
-    "My feet," Sarah said, surprised. "They're... here."
-    
-    This moment - when trauma survivors rediscover their 
-    feet - appeared in workshop after workshop. Participants
-    would suddenly look down, wiggle their toes, sometimes
-    even laugh. 
-    
-    Van der Kolk has written about the importance of 
-    grounding, but what we're seeing here feels more 
-    specific - it's not just grounding, but a particular
-    quality of surprised recognition. As if the body is
-    saying "Oh, I'm still here. I'm okay."
-    
-    What might this mean for how we understand 
-    re-embodiment after trauma?
-```
-
-#### Hour 6-7: Case Study Development
-**3:00-5:00 PM**
-
-```yaml
-case_study_creation:
-  
-  selection_criteria:
-    - Clear transformation arc
-    - Multiple intervention types
-    - Cultural considerations
-    - Compelling human story
-    
-  anonymization:
-    - Change identifying details
-    - Preserve emotional truth
-    - Maintain clinical accuracy
-    
-  structure:
-    - Background and context
-    - Journey through sessions
-    - Breakthrough moments
-    - Clinical annotations
-    - Broader implications
-    
-  licia_enrichment:
-    - Show Licia the case
-    - Capture her insights
-    - "What were you noticing?"
-    - "Why this intervention?"
-    - Integrate her voice naturally
-```
-
-### Day 2 Deliverables
-- Question clustering with learning flows
-- Research-enriched pattern documentation
-- 3-5 narrative frameworks
-- 2 detailed case studies with Licia's voice
-
----
-
-## 📅 Day 3: Assembly & Handoff
-
-### Morning (9:00 AM - 12:00 PM)
-
-#### Hour 1-2: Chapter Draft Generation
-**9:00-11:00 AM**
-
-```yaml
-chapter_assembly:
-  
-  components_per_chapter:
-    - Opening narrative (compelling story)
-    - Pattern exploration (what we discovered)
-    - Multiple examples (varied perspectives)
-    - Research connections (naturally woven)
-    - Questions raised (not answered)
-    - Clinical implications
-    - Cultural considerations
-    
-  tone_throughout:
-    - Collaborative discovery
-    - Wonder and curiosity
-    - Respect for complexity
-    - No forced conclusions
-    
-  length: 5-10 pages per chapter draft
-  chapters_to_complete: 2-3
-```
-
-#### Hour 3: Evidence Portfolio
-**11:00 AM-12:00 PM**
-
-```yaml
-rigor_documentation:
-  
-  purpose: Show inherent scientific foundation
-  
-  approach:
-    - Let patterns speak for themselves
-    - Show convergent evidence
-    - Document natural emergence
-    - Include TDAI scores (subtly)
-    
-  format:
-    - Visual pattern maps
-    - Convergent evidence charts
-    - Source quality indicators
-    - But presented as "interesting observations"
-```
-
-### Afternoon (1:00 PM - 5:00 PM)
-
-#### Hour 4: Training Materials
-**1:00-2:00 PM**
-
-```yaml
-practitioner_resources:
-  
-  extract_from_patterns:
-    - Teachable interventions
-    - Safety considerations
-    - Cultural adaptations
-    - Contraindications
-    
-  format:
-    - Intervention guides
-    - Case study workbooks
-    - Training modules outline
-    - Facilitator notes
-```
-
-#### Hour 5-6: Complete Handoff Package
-**2:00-4:00 PM**
-
-```yaml
-final_package_contents:
-  
-  1_editorial_materials:
-    - 2-3 chapter drafts
-    - 20+ enriched examples
-    - Case study collection
-    - Pattern documentation
-    
-  2_visual_resources:
-    - Updated Mural boards
-    - Pattern visualizations
-    - Question flow diagrams
-    - Chapter alignment maps
-    
-  3_research_integration:
-    - Source quality assessments
-    - Evidence portfolios
-    - Research gap identification
-    - Future research directions
-    
-  4_continuation_guide:
-    - How to use the system
-    - Next transcripts to process
-    - Ongoing workflow documentation
-    - 90-day roadmap
-```
-
-#### Hour 7: Team Training
-**4:00-5:00 PM**
-
-```yaml
-knowledge_transfer:
-  
-  system_training:
-    - Basic agent capabilities
-    - How to request analyses
-    - Understanding outputs
-    - Troubleshooting guide
-    
-  workflow_training:
-    - Daily processing routine
-    - Quality checkpoints
-    - Licia voice integration
-    - Research incorporation
-    
-  best_practices:
-    - Maintaining "revelation not persuasion"
-    - Preserving nuance
-    - Natural research integration
-    - Collaborative tone
-```
-
-### Day 3 Deliverables
-- 2-3 complete chapter drafts
-- Full editorial package
-- Training documentation
-- 90-day continuation roadmap
-
----
-
-## 🎭 Subtle Revelation Techniques
-
-### The Art of Natural Discovery
-
-#### Technique 1: Bridge from Familiar
-```
-Start: "Remember in 'The Body Keeps the Score' where you 
-       discuss the window of tolerance?"
-       
-Bridge: "We're seeing something that builds on that..."
-
-Reveal: "Participants here seem to expand that window 
-        specifically through breath and movement combined,
-        not just one or the other."
-```
-
-#### Technique 2: Convergent Evidence
-```
-"Three different workshops, three different cities, 
-but participants kept using the exact same word: 'melting.'
-Not relaxing, not releasing - specifically 'melting.'
-The consistency is remarkable..."
-```
-
-#### Technique 3: Collaborative Wonder
-```
-"Bessel, what do you make of this? Every time Licia uses
-this particular touch intervention, we see the same 
-eye movement pattern. It's almost like... but different
-from EMDR. What's your take?"
-```
-
-#### Technique 4: Data as Story
-```
-"Seventeen out of twenty participants - that's 85% - 
-showed this same progression: freeze, shake, cry, laugh.
-In that exact order. Every time. The pattern is so
-consistent it's almost musical..."
+Needs Better Support:
+• [Topic] - only general sources
 ```
 
 ---
 
-## 📊 Success Metrics
+## 🗓️ Day-by-Day Strategy
 
-### Daily Check-ins
+### Day 1 (Friday): Foundation & Flow
+**Morning:**
+- Present "Senses Write the Score" framework
+- Map existing outline to this framework
+- Identify where it strengthens/challenges current structure
 
-#### End of Day 1
-- [ ] Team sees value immediately
-- [ ] Patterns emerging naturally
-- [ ] Licia's voice captured
-- [ ] No feeling of forced interpretation
+**Afternoon:**
+- Question clustering workshop
+- Create chapter flow from questions
+- Identify natural narrative arcs
 
-#### End of Day 2
-- [ ] Deeper patterns visible
-- [ ] Research feels natural
-- [ ] Stories compelling
-- [ ] Questions abundant
+**Materials Needed:**
+- Framework visual on whiteboard
+- Question cards for clustering
+- Colored markers for connections
+- Sticky notes for new insights
 
-#### End of Day 3
-- [ ] Chapters taking shape
-- [ ] Bessel engaged and curious
-- [ ] Editorial team equipped
-- [ ] Clear path forward
+### Day 2 (Saturday): Depth & Integration
+**Morning:**
+- Touch vocabulary deep dive
+- Psychedelic integration discussion
+- Case study placement
 
-### Quality Indicators
-- Bessel asks follow-up questions
-- Editors don't notice the strategy
-- Licia feels heard and represented
-- Research supports but doesn't dominate
-- Stories lead, evidence follows
+**Afternoon:**
+- Science-practice bridging
+- Fill identified gaps
+- Strengthen weak evidence areas
 
----
+**Materials Needed:**
+- Touch hierarchy visual
+- Integration talking points
+- Science bridge cards
+- Source quality indicators
 
-## 🚨 Emergency Protocols
+### Day 3 (Sunday): Synthesis & Agreement
+**Morning:**
+- Final outline assembly
+- Voice and tone alignment
+- Ensure triple consensus
 
-### If Resistance to Findings
-- Return to story
-- Ask questions instead of asserting
-- Show multiple perspectives
-- Invite exploration
+**Afternoon:**
+- Next steps planning
+- Task distribution
+- Timeline setting
 
-### If Too Academic
-- Immediately return to human story
-- Add sensory details
-- Include participant voices
-- Simplify language
-
-### If Too Anecdotal
-- Gently weave in patterns
-- Show consistency across sessions
-- Add "interesting parallels"
-- Reference familiar frameworks
-
----
-
-## 💡 Quick Reference Cards
-
-### Language to Use
-✅ "We noticed..."
-✅ "Participants often..."
-✅ "A pattern emerged..."
-✅ "Interestingly..."
-✅ "Makes you wonder..."
-
-### Language to Avoid
-❌ "This proves..."
-❌ "Evidence demonstrates..."
-❌ "Research confirms..."
-❌ "Studies show..."
-❌ "Data indicates..."
-
-### Story Structure
-1. 🎭 Human moment (sensory rich)
-2. 🔍 Pattern observation (gentle noticing)
-3. 🌊 Broader context (other sessions)
-4. 💭 Gentle research (natural connection)
-5. ❓ Open questions (invite exploration)
+**Materials Needed:**
+- Clean outline template
+- Consensus tracking sheet
+- Action items list
+- Timeline visual
 
 ---
 
-## 🙏 Final Reminders
+## 🎯 Bridging Bessel & Licia
 
-### The Sacred Balance
-- **Nuance is sacred** - Never flatten complexity
-- **Rigor exists already** - Reveal don't impose
-- **Stories first** - Let narrative lead
-- **Questions over answers** - Invite discovery
-- **Together not apart** - Collaborative throughout
+### Starting Points from Bessel's World:
+1. **Rubber hand experiment** → Explore trust vs. tricks
+2. **Neuroscience findings** → Connect to embodied experience
+3. **Clinical studies** → Show somatic correlates
+4. **His existing framework** → Expand with sensory sovereignty
 
-### The Mission
-We're not trying to convince anyone of anything. We're revealing what's already there - the profound scientific rigor inherent in Licia's four decades of trauma healing work. When we do this right, Bessel won't feel persuaded; he'll feel like he's discovering something that was always visible, just waiting to be noticed.
+### Translation Strategies:
+- Never say "this proves" - say "we noticed"
+- Start with his concepts, gently expand
+- Use convergent evidence from multiple perspectives
+- Frame as collaborative discovery
+
+### Example Bridge:
+"Bessel, your work on the freeze response is fascinating. We're seeing participants naturally move through that sequence, but with this breath work addition, they seem to complete the cycle more fully. What do you make of this pattern?"
 
 ---
 
-*"Revelation, not persuasion. Let the work speak for itself."*
+## 📝 Modular Materials Format
 
-**Remember:** The editorial sprint is about creating a collaborative space where insights emerge naturally, where science and story dance together, and where the profound wisdom of trauma healing reveals itself in its full depth and rigor.
+### Why Modular?
+- Editors can rearrange on the fly
+- Supports improvisational style
+- Visual and tactile
+- Creates energy and engagement
+
+### Card Categories:
+- **Green:** Examples/Case studies
+- **Yellow:** Research/Science
+- **Blue:** Questions/Explorations
+- **Pink:** Licia's insights
+- **Orange:** Gaps to fill
+- **Purple:** Bessel connections
+
+### Whiteboard Zones:
+```
+┌─────────────────────────────────────┐
+│  QUESTIONS  │  THEMES  │  CHAPTERS  │
+├─────────────┼──────────┼────────────┤
+│             │          │            │
+│  [Cluster]  │  [Flow]  │  [Order]   │
+│             │          │            │
+├─────────────┴──────────┴────────────┤
+│         SENSES WRITE THE SCORE      │
+│         [Central Framework]          │
+└─────────────────────────────────────┘
+```
+
+---
+
+## ⚡ Quick Reference Sheets
+
+### Licia's Core Insights:
+1. "The senses write the score that the body keeps"
+2. "Trust in senses = trust in self = agency"
+3. "Proximity is contact, eye is contact, voice is contact..."
+4. Integration is where psychedelics meet somatics
+5. Flow matters more than comprehensive coverage
+
+### Science That Validates:
+- Interoception research (Craig, Farb, Garfinkel)
+- Polyvagal theory (Porges)
+- Attachment neuroscience (Schore)
+- Embodied cognition (Varela, Thompson)
+- Sensory processing in trauma (van der Kolk, Ogden)
+
+### Gaps to Address:
+- Book ending/closure
+- Integration of perspectives
+- Case study selection
+- Cultural considerations
+- Practical applications
+
+---
+
+## 🚀 Success Metrics
+
+### By End of Sprint:
+- [ ] Outline everyone feels good about
+- [ ] Clear chapter flow established
+- [ ] "Senses Write Score" integrated or decided
+- [ ] Touch vocabulary documented
+- [ ] Psychedelic integration positioned
+- [ ] Science-practice bridges built
+- [ ] Next steps crystal clear
+
+### Signs of Success:
+- Bessel sees Licia's scientific rigor naturally
+- Licia feels her voice is represented
+- Editors excited about the vision
+- Clear path forward
+- Energy and alignment
+
+---
+
+## 💡 Remember
+
+### Licia's Wisdom:
+> "I'm thinking about the flow of things... Bessel is mired in details."
+
+### Brett's Observation:
+> "The senses write the score - that's got to be on the cover!"
+
+### The Mission:
+Not to convince but to reveal. Not to impose but to discover. Not to separate but to bridge.
+
+---
+
+## 📞 Emergency Support
+
+If needed during sprint:
+- Brett available with 30-60 min notice
+- Can provide:
+  - Additional analysis
+  - Question clustering
+  - Science searches
+  - Bridge building
+  - Real-time support
+
+---
+
+*"Whatever you're going to give me is going to be so much fun for them to run with and play with." - Licia Sky*
+
+This playbook provides the "nutrients and tee-ups" for a transformative editorial weekend.
