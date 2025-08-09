@@ -348,6 +348,255 @@ output:
   - Teaching stories with full context
 ```
 
+### 🎯 PRIORITY 1: Licia's Example Enrichment Workflow
+```yaml
+workflow: licia_example_enrichment_multi_stage
+purpose: Create rolling list of book examples with Licia's voice and context
+critical_need: "Examples for Bessel and editors with Licia's added depth"
+
+agents_involved:
+  - All 13 agents for initial identification
+  - Publication Generation Agent for formatting
+  - Clinical Application Agent for therapeutic context
+
+process:
+  1_example_identification:
+    trigger: During any transcript analysis
+    identification_criteria:
+      - Breakthrough moments
+      - Clear therapeutic interventions
+      - Cultural healing examples
+      - Touch/somatic instances
+      - Group dynamics shifts
+    
+    candidate_queue_structure:
+      - Example ID
+      - Source transcript/timestamp
+      - Relevance to book chapters
+      - Impact score (1-10)
+      - Type (breakthrough/intervention/cultural/somatic)
+    
+    output: "Example Candidate Queue" with priorities
+    
+  2_licia_review_preparation:
+    preparation_packet:
+      - Transcript excerpt (2-3 paragraphs)
+      - Context (what led to this moment)
+      - Initial agent observations
+      - Suggested questions for Licia
+      
+    review_format:
+      - Present via screen or printout
+      - Include visual markers for key moments
+      - Space for Licia's notes
+      - Recording setup for voice capture
+    
+    output: Review packets ready for Licia
+    
+  3_licia_voice_capture:
+    capture_process:
+      prompt_questions:
+        - "What was happening here that mattered?"
+        - "What were you noticing in their body?"
+        - "What made you choose this intervention?"
+        - "What shifted after this moment?"
+        - "What would practitioners need to know?"
+      
+      recording_method:
+        - Audio transcription preferred
+        - Video for somatic demonstrations
+        - Written notes as backup
+        
+      session_structure:
+        - 5-10 minutes per example
+        - Natural storytelling encouraged
+        - No editing, raw capture
+    
+    output: Licia's transcribed additions
+    
+  4_forensic_transcript_analysis:
+    agents: All Context Guardians
+    analysis_tasks:
+      - Extract clinical insights
+      - Identify theoretical connections
+      - Map to existing frameworks
+      - Note unique contributions
+      - Capture teaching elements
+      
+    integration_points:
+      - Where to insert Licia's context
+      - How to weave with original
+      - Maintaining narrative flow
+      - Preserving both voices
+    
+    output: Analyzed and mapped additions
+    
+  5_enriched_narrative_generation:
+    composition_structure:
+      opening:
+        - Original transcript context
+        - Scene setting
+        
+      development:
+        - [Original transcript excerpt]
+        - [Licia's voice: "What I was noticing..."]
+        - [Agent analysis of patterns]
+        - [Return to transcript]
+        
+      clinical_annotation:
+        - Intervention rationale
+        - Theoretical framework
+        - Cultural considerations
+        - Safety notes
+        
+      conclusion:
+        - Outcome/transformation
+        - Broader implications
+        - Teaching applications
+    
+    output: Book-ready enriched examples (2-4 pages each)
+
+nested_workflows:
+  A_immediate_editorial_use:
+    timeline: Same day
+    purpose: Quick examples for current discussions
+    format: 1-page summaries with key quotes
+    
+  B_follow_on_deepening:
+    timeline: Within week
+    purpose: Licia adds more context
+    format: Extended narratives
+    
+  C_research_connections:
+    timeline: Ongoing
+    purpose: Connect to literature
+    format: Academic annotations
+    
+  D_training_materials:
+    timeline: Future
+    purpose: Practitioner education
+    format: Case study workbooks
+
+success_metrics:
+  - Rolling list always has 20+ examples
+  - Each example has Licia's voice
+  - Natural integration of perspectives
+  - Editorial team finds them compelling
+  - Bessel sees the rigor naturally
+```
+
+### 🎯 PRIORITY 1: Subtle Revelation Strategy
+```yaml
+workflow: subtle_revelation_for_bessel
+purpose: Naturally reveal Licia's scientific rigor without forcing
+philosophy: "Let the evidence speak for itself"
+
+implementation_guidelines:
+  
+  language_principles:
+    never_use:
+      - "This proves..."
+      - "Evidence demonstrates..."
+      - "Research confirms..."
+      - "Studies show..."
+      - "Data indicates..."
+      
+    always_use:
+      - "We noticed..."
+      - "Interestingly..."
+      - "Participants often..."
+      - "A pattern emerged..."
+      - "We discovered..."
+      
+  narrative_structure:
+    1_story_first:
+      - Start with compelling example
+      - Rich sensory details
+      - Human connection
+      - Emotional resonance
+      
+    2_pattern_emergence:
+      - "This reminded us of..."
+      - "Similar to other sessions..."
+      - "A recurring theme..."
+      - Natural observation
+      
+    3_gentle_research_weaving:
+      - "Which aligns with..."
+      - "Echoes what [researcher] noticed..."
+      - "Parallels emerge with..."
+      - Conversational citations
+      
+    4_multiple_perspectives:
+      - Present various viewpoints
+      - No single "right" answer
+      - Honor complexity
+      - Invite exploration
+      
+    5_questions_not_conclusions:
+      - "What might this mean?"
+      - "Could this suggest...?"
+      - "Worth exploring..."
+      - "Raises interesting questions..."
+  
+  evidence_embedding_techniques:
+    
+    technique_1_convergent_evidence:
+      approach: Multiple sources point same direction
+      example: |
+        "Three participants independently described
+        a 'melting' sensation during the intervention.
+        Interestingly, van der Kolk's team noticed
+        similar descriptions in their PTSD studies,
+        and the somatic therapy literature often
+        mentions this 'dissolution of armoring.'
+        Makes you wonder about universal patterns..."
+    
+    technique_2_bridge_from_familiar:
+      approach: Start with what Bessel knows
+      example: |
+        "You know that freeze response you wrote about?
+        We're seeing something fascinating here - 
+        participants naturally move through that same
+        sequence, but with this subtle addition of
+        breath work, they seem to complete the cycle
+        more fully. Look at how Sarah's shoulders..."
+    
+    technique_3_collaborative_discovery:
+      approach: Position as joint exploration
+      example: |
+        "Bessel, what do you make of this pattern?
+        We keep seeing this eye movement right before
+        breakthroughs. Reminds me of your work on
+        bilateral stimulation, but there's something
+        different here..."
+    
+    technique_4_data_as_story:
+      approach: Let numbers tell narrative
+      example: |
+        "Seventeen out of twenty participants used
+        the word 'spacious' after this intervention.
+        Not 'relaxed' or 'calm' - specifically 'spacious.'
+        The consistency is striking..."
+  
+  output_review_checklist:
+    - [ ] Story comes before analysis?
+    - [ ] Research woven naturally?
+    - [ ] Multiple perspectives honored?
+    - [ ] Questions outnumber assertions?
+    - [ ] Bessel's frameworks referenced?
+    - [ ] Evidence emerges, not imposed?
+    - [ ] Collaborative tone throughout?
+    - [ ] Rigor visible but not forced?
+
+success_indicators:
+  - Bessel asks follow-up questions
+  - Editorial team doesn't notice deliberate strategy
+  - Research feels like natural part of story
+  - Licia's rigor becomes self-evident
+  - Collaborative excitement builds
+```
+
 ---
 
 ## 🔍 Question Processing Workflows
@@ -447,6 +696,133 @@ output:
 
 ## 🔬 Perplexity Integration Workflows
 
+### 🎯 PRIORITY 1: Perplexity Source Ranking Workflow
+```yaml
+workflow: perplexity_source_ranking_and_analysis
+purpose: Rank 25-30 sources per thread by research quality and academic rigor
+critical_context: "Often half to two-thirds are just random people on websites"
+
+agents_involved:
+  - Theoretical Framework Agent (academic assessment)
+  - Clinical Application Agent (practical validity)
+  - Publication Generation Agent (book relevance)
+
+process:
+  1_source_extraction:
+    input: Each Perplexity thread (typically 25-30 sources)
+    tasks:
+      - Extract all source URLs
+      - Capture source metadata:
+        - Author credentials
+        - Publication venue
+        - Publication date
+        - Citation count (if available)
+      - Preserve original context of citation
+    output: Complete source inventory with metadata
+    
+  2_individual_source_scoring:
+    evaluation_matrix:
+      academic_credibility:
+        score: 0-10
+        factors:
+          - Peer-reviewed journal: +3
+          - University affiliation: +2
+          - Professional credentials: +2
+          - Citation metrics: +2
+          - Publication reputation: +1
+      
+      research_depth:
+        score: 0-10
+        factors:
+          - Primary research: +3
+          - Systematic review: +3
+          - Clinical study: +2
+          - Expert commentary: +1
+          - Blog/opinion: 0
+      
+      methodological_rigor:
+        score: 0-10
+        factors:
+          - Clear methodology: +3
+          - Sample size adequate: +2
+          - Controls present: +2
+          - Limitations acknowledged: +2
+          - Replicable: +1
+    
+    output: Individual source scores (0-30 total)
+    
+  3_source_tiering:
+    tier_1_academic_gold:
+      criteria: Score 24-30
+      characteristics:
+        - Peer-reviewed research
+        - Strong methodology
+        - High citation count
+        - Recent publication (last 5 years)
+      marking: "⭐ GOLD STANDARD"
+      
+    tier_2_professional:
+      criteria: Score 15-23
+      characteristics:
+        - Professional publications
+        - Expert practitioners
+        - Clinical experience
+        - Industry standards
+      marking: "✓ RELIABLE"
+      
+    tier_3_general_web:
+      criteria: Score 0-14
+      characteristics:
+        - Blog posts
+        - Personal opinions
+        - Unverified claims
+        - Anecdotal evidence
+      marking: "⚠️ USE WITH CAUTION"
+    
+    output: Tiered source list with visual markers
+    
+  4_synthesis_weighting:
+    process:
+      - Weight insights by source tier
+      - Tier 1 sources: 3x weight
+      - Tier 2 sources: 2x weight
+      - Tier 3 sources: 1x weight
+      - Flag any claims ONLY supported by Tier 3
+    
+    quality_flags:
+      - "🚨 Needs better source" (only Tier 3 support)
+      - "✅ Well-supported" (multiple Tier 1 sources)
+      - "📊 Mixed evidence" (conflicting tiers)
+    
+    output: Weighted synthesis with source quality indicators
+    
+  5_integration_report:
+    sections:
+      executive_summary:
+        - Key findings from Tier 1 sources
+        - Professional consensus from Tier 2
+        - Popular perspectives from Tier 3
+        
+      evidence_quality_assessment:
+        - Percentage breakdown by tier
+        - Weakest claims identified
+        - Strongest evidence highlighted
+        
+      research_gaps:
+        - Topics with only Tier 3 coverage
+        - Areas needing academic research
+        - Suggested additional searches
+        
+    output: Source-ranked Perplexity analysis report
+
+success_metrics:
+  - 100% of sources categorized
+  - Clear tier identification
+  - Weighted synthesis reflects quality
+  - Research gaps identified
+  - Licia can trust the rankings
+```
+
 ### Thread Quality Assessment
 ```yaml
 workflow: perplexity_thread_evaluation
@@ -475,18 +851,19 @@ process:
       - Cultural sensitivity (0-10)
     process:
       - Each thread gets TDAI scoring
+      - Apply source ranking workflow to each thread
       - Flag high-value insights
       - Identify contradictions
       - Note gaps or questions raised
-    output: Thread quality matrix
+    output: Thread quality matrix with source rankings
     
   3_insight_extraction:
     tasks:
-      - Pull key findings from each thread
-      - Extract quotable passages
-      - Identify supporting research
+      - Pull key findings from Tier 1 sources first
+      - Extract quotable passages with quality markers
+      - Identify supporting research by tier
       - Note methodologies mentioned
-    output: Insight database from threads
+    output: Insight database with source quality tags
     
   4_integration_mapping:
     tasks:
@@ -498,14 +875,15 @@ process:
     
   5_synthesis_report:
     tasks:
-      - Summarize unified findings
-      - Highlight breakthrough insights
+      - Summarize unified findings by source tier
+      - Highlight breakthrough insights from gold sources
       - Document contradictions and resolutions
       - Recommend integration priorities
     output: Perplexity synthesis report (10 pages)
 
 success_metrics:
   - All 20 threads processed and scored
+  - Source quality visible throughout
   - Key insights extracted and mapped
   - Contradictions identified and addressed
   - Clear integration path defined
