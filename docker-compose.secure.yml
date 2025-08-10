@@ -1,0 +1,73 @@
+version: '3.9'
+
+networks:
+  internal_only:
+    internal: true
+  bridge:
+    driver: bridge
+
+services:
+  # Core Infrastructure
+  redis:
+    image: redis:7-alpine
+    container_name: licia-redis
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - ./data/redis:/data
+    networks:
+      - bridge
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:latest
+    container_name: licia-chromadb
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data/chromadb:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    networks:
+      - bridge
+    restart: unless-stopped
+
+  # Review Interface (lightweight Python container)
+  review-interface:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.review
+    container_name: licia-review
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - REDIS_HOST=redis
+      - FLASK_ENV=production
+    volumes:
+      - ./review_interface:/app
+      - ./outputs:/data/outputs:ro
+    networks:
+      - bridge
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  # Task Queue Worker
+  task-queue:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    container_name: licia-task-queue
+    environment:
+      - REDIS_HOST=redis
+      - CHROMADB_HOST=chromadb
+    volumes:
+      - ./:/workspace
+    networks:
+      - bridge
+    depends_on:
+      - redis
+      - chromadb
+    restart: unless-stopped
