@@ -1,0 +1,31 @@
+{
+  "oauth": {
+    "client_id": "646c2dea-f302-4821-bf44-8ed590cd2285",
+    "client_secret": "7f694a84a209ac21a60ca0294a53fc58c472f52aae608fd7b47edf96491f1943118011bd14476fa74c02607d98ddba00f26b607870a51fd1ab3f46ae2734fef1",
+    "redirect_uri": "http://localhost:8080/callback"
+  },
+  "api_key": "",
+  "workspace_id": "root7380",
+  "board_id": "1754493659737",
+  "base_url": "https://api.mural.co/api/v0",
+  "timeout": 30,
+  "max_retries": 5,
+  "batch_size": 25,
+  "test_mode": true,
+  "auto_healing": {
+    "enabled": true,
+    "max_fallback_attempts": 3,
+    "retry_delays": [1, 2, 4, 8, 16]
+  },
+  "visual_config": {
+    "body_width": 800,
+    "body_height": 600,
+    "sticky_width": 80,
+    "tdai_colors": {
+      "shallow": "#FF6B6B",
+      "medium": "#FFD93D",
+      "deep_light": "#6BCF7F",
+      "deep": "#2ECC71"
+    }
+  }
+}
